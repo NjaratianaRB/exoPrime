@@ -1,5 +1,11 @@
 doctrine:
     dbal:
+        # configure these for your database server
+        driver: 'pdo_mysql'
+        server_version: '5.2.0'
+        charset: utf8mb4
+
+        # With MAMP or XAMPP on macOS, use '127.0.0.1' instead of 'localhost'
         url: '%env(resolve:DATABASE_URL)%'
 
         # IMPORTANT: You MUST configure your server version,
